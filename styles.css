@@ -1,0 +1,234 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic);
+
+body {
+  margin: 0;
+  background-color: white;
+  background: url('images/coming-soon_bg.png') center 101% no-repeat;
+  background-size: contain;
+}
+
+/* Disable ugly boxes around images in IE10 */
+a img{
+  border: 0px;
+}
+
+::-moz-selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+::selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+.mdl-textfield__label:after, .mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+  background-color: #ED5351;
+}
+
+.mdl-textfield--expandable {
+  width: auto;
+}
+
+.getmdl-fab {
+  position: absolute;
+  right: 20%;
+  bottom: -26px;
+  z-index: 3;
+  background: #64ffda !important;
+  color: black !important;
+}
+
+.getmdl-mobile-title {
+  display: none !important;
+}
+
+
+.getmdl-logo-image {
+  height: 28px;
+  width: 140px;
+}
+
+
+
+
+.getmdl-be-together-section {
+  position: relative;
+  height: 800px;
+  width: auto;
+}
+
+.getmdl-font {
+  font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  color: #424242;
+  font-weight: 300;
+}
+
+.getmdl-slogan {
+  font-size: 80px;
+  padding-top: 160px;
+}
+
+.getmdl-sub-slogan {
+  font-size: 19px;
+  padding-top: 24px;
+  color: #c2c2c2;
+}
+
+.getmdl-launching {
+  font-size: 32px;
+  padding-top: 30px;
+  color: #c2c2c2;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+  .getmdl-launching a {
+    text-decoration: none;
+    color: #767777;
+    font-weight: 300;
+  }
+
+
+
+
+.getmdl-link {
+  text-decoration: none;
+  color: #8bc34a !important;
+}
+
+  .getmdl-link:hover {
+    color: #7cb342 !important;
+  }
+
+  .getmdl-link .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+.getmdl-alt-link {
+  text-decoration: none;
+  color: #64ffda !important;
+  font-size: 16px;
+}
+
+  .getmdl-alt-link:hover {
+    color: #00bfa5 !important;
+  }
+
+  .getmdl-alt-link .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+.mdl-mega-footer {
+    background: none;
+    color: #c2c2c2;
+    padding: 0px 40px;
+}
+
+.getmdl-footer {
+  position: fixed;
+  bottom: 0;
+}
+
+  .getmdl-footer a:hover {
+    color: #8bc34a;
+  }
+
+  .getmdl-footer .mdl-mega-footer--top-section::after {
+    border-bottom: none;
+  }
+
+  .getmdl-footer .mdl-mega-footer--middle-section::after {
+    border-bottom: none;
+  }
+
+  .getmdl-footer .mdl-mega-footer--bottom-section {
+    position: relative;
+  }
+
+  .getmdl-footer .mdl-mega-footer--bottom-section a {
+    margin-right: 2em;
+  }
+
+  .getmdl-footer .mdl-mega-footer--right-section a .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+.getmdl-link-menu:hover {
+  cursor: pointer;
+}
+
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+  .getmdl-navigation-container {
+    display: none;
+  }
+
+  .getmdl-title {
+    display: none !important;
+  }
+
+  .getmdl-mobile-title {
+    display: block !important;
+    position: absolute;
+    left: calc(50% - 70px);
+    top: 12px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+
+  .getmdl-be-together-section {
+    height: 350px;
+  }
+
+  .getmdl-slogan {
+    font-size: 26px;
+    margin: 0 16px;
+    padding-top: 24px;
+  }
+
+  .getmdl-sub-slogan {
+    font-size: 16px;
+    margin: 0 16px;
+    padding-top: 8px;
+  }
+
+  .getmdl-launching {
+    padding-top: 200px;
+    font-size: 16px;
+  }
+
+  .getmdl-launching img {
+    height: 12px;
+  }
+
+  .getmdl-fab {
+    display: none;
+  }
+
+
+  .getmdl-footer .mdl-mega-footer--bottom-section {
+    display: none;
+  }
+}
