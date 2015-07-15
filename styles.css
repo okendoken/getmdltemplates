@@ -94,10 +94,6 @@ body {
     color: white;
 }
 
-.getmdl-footer .mdl-mega-footer--top-section::after {
-    border-bottom: none;
-  }
-
 
 /**** Mobile layout ****/
 @media (max-width: 900px) {
