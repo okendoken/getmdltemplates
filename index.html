@@ -25,48 +25,40 @@
     <title>getmdl</title>
 
     <!-- Page styles -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.css">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="styles.css">
 
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-
-      <div class="getmdl-drawer mdl-layout__drawer">
-        <span class="mdl-layout-title">
-          <img class="getmdl-logo-image" src="images/getmdl-logo-white.png">
-        </span>
-      </div>
+    <div class="mdl-layout mdl-js-layout">
 
       <div class="getmdl-content mdl-layout__content">
-        <a name="top"></a>
-        <div class="getmdl-be-together-section mdl-typography--text-center">
+
+        <div class="getmdl-launching-section mdl-typography--text-center">
           <div class="getmdl-font getmdl-slogan"><b>Material</b> templates</div>
           <div class="getmdl-font getmdl-sub-slogan">"welcome to getmdl... be yourself. do your thing. see what's going on"</div>
           <div class="getmdl-font getmdl-launching">
             Launching soon...
           </div>
           <div class="getmdl-font getmdl-sub-slogan">We will let you know when we are launching</div>
-          <!-- Simple Textfield -->
+
+          <!-- Textfield -->
           <form action="#">
+            <i class="mdl-color-text--blue-grey-100 material-icons" for="email">email</i>
             <div class="mdl-textfield mdl-js-textfield textfield-demo">
-              <input class="mdl-textfield__input" type="text" id="sample1" />
-              <label class="mdl-textfield__label" for="sample1">Text...</label>
+              <input class="mdl-textfield__input" type="text" id="email" type="email" class="validate"/>
+              <label class="mdl-textfield__label" for="email">your email</label>
             </div>
           </form>
+
           <!-- Accent-colored raised button with ripple -->
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
             Sign Up
           </button>
+
         </div>
-
-
-
-
 
         <footer class="getmdl-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">

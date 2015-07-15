@@ -23,52 +23,43 @@ body {
   background-size: contain;
 }
 
-/* Disable ugly boxes around images in IE10 */
-a img{
-  border: 0px;
-}
 
 ::-moz-selection {
-  background-color: #6ab344;
+  background-color: #ED5351;
   color: #fff;
 }
 
 ::selection {
-  background-color: #6ab344;
+  background-color: #ED5351;
   color: #fff;
+}
+
+.mdl-layout__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .mdl-textfield__label:after, .mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
   background-color: #ED5351;
-}
-
-.mdl-textfield--expandable {
-  width: auto;
-}
-
-.getmdl-fab {
-  position: absolute;
-  right: 20%;
-  bottom: -26px;
-  z-index: 3;
-  background: #64ffda !important;
-  color: black !important;
-}
-
-.getmdl-mobile-title {
-  display: none !important;
+  text-transform: initial;
 }
 
 
-.getmdl-logo-image {
-  height: 28px;
-  width: 140px;
+.mdl-textfield__label, .mdl-textfield__input {
+  text-align: center;
+  font-size: 24px;
+  /*border: 1px solid #E0E0E1;*/
 }
 
+.mdl-button {
+  text-align: center;
+  font-size: 19px;
+  width: 120px;
+  height: 45px;
+}
 
-
-
-.getmdl-be-together-section {
+.getmdl-launching-section {
   position: relative;
   height: 800px;
   width: auto;
@@ -83,64 +74,26 @@ a img{
 
 .getmdl-slogan {
   font-size: 80px;
-  padding-top: 160px;
+  padding: 24px 0;
 }
 
 .getmdl-sub-slogan {
   font-size: 19px;
-  padding-top: 24px;
+  padding: 24px 0;
   color: #c2c2c2;
 }
 
 .getmdl-launching {
-  font-size: 32px;
+  font-size: 34px;
   padding-top: 30px;
   color: #c2c2c2;
   text-transform: uppercase;
   font-weight: 600;
 }
 
-  .getmdl-launching a {
-    text-decoration: none;
-    color: #767777;
-    font-weight: 300;
-  }
-
-
-
-
-.getmdl-link {
-  text-decoration: none;
-  color: #8bc34a !important;
-}
-
-  .getmdl-link:hover {
-    color: #7cb342 !important;
-  }
-
-  .getmdl-link .material-icons {
-    position: relative;
-    top: 6px;
-  }
-
-.getmdl-alt-link {
-  text-decoration: none;
-  color: #64ffda !important;
-  font-size: 16px;
-}
-
-  .getmdl-alt-link:hover {
-    color: #00bfa5 !important;
-  }
-
-  .getmdl-alt-link .material-icons {
-    position: relative;
-    top: 6px;
-  }
-
 .mdl-mega-footer {
     background: none;
-    color: #c2c2c2;
+    color: white;
     padding: 0px 40px;
 }
 
@@ -149,56 +102,15 @@ a img{
   bottom: 0;
 }
 
-  .getmdl-footer a:hover {
-    color: #8bc34a;
-  }
-
-  .getmdl-footer .mdl-mega-footer--top-section::after {
+.getmdl-footer .mdl-mega-footer--top-section::after {
     border-bottom: none;
   }
-
-  .getmdl-footer .mdl-mega-footer--middle-section::after {
-    border-bottom: none;
-  }
-
-  .getmdl-footer .mdl-mega-footer--bottom-section {
-    position: relative;
-  }
-
-  .getmdl-footer .mdl-mega-footer--bottom-section a {
-    margin-right: 2em;
-  }
-
-  .getmdl-footer .mdl-mega-footer--right-section a .material-icons {
-    position: relative;
-    top: 6px;
-  }
-
-.getmdl-link-menu:hover {
-  cursor: pointer;
-}
 
 
 /**** Mobile layout ****/
 @media (max-width: 900px) {
-  .getmdl-navigation-container {
-    display: none;
-  }
 
-  .getmdl-title {
-    display: none !important;
-  }
-
-  .getmdl-mobile-title {
-    display: block !important;
-    position: absolute;
-    left: calc(50% - 70px);
-    top: 12px;
-    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-
-  .getmdl-be-together-section {
+  .getmdl-launching-section {
     height: 350px;
   }
 
@@ -215,20 +127,8 @@ a img{
   }
 
   .getmdl-launching {
-    padding-top: 200px;
+    padding-top: 50px;
     font-size: 16px;
   }
 
-  .getmdl-launching img {
-    height: 12px;
-  }
-
-  .getmdl-fab {
-    display: none;
-  }
-
-
-  .getmdl-footer .mdl-mega-footer--bottom-section {
-    display: none;
-  }
 }
